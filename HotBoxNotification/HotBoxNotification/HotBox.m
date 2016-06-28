@@ -43,7 +43,7 @@
         [_window setFrame:CGRectMake(0, 0, self.dimensions.width, self.dimensions.height)];
         [_window setWindowLevel:UIWindowLevelStatusBar];
         [_window setRootViewController:[self.viewControllers firstObject]];
-        [_window setBackgroundColor:[UIColor clearColor]];
+        [_window setBackgroundColor:[UIColor darkGrayColor]];
         [_window setHidden:NO];
     }
     return _window;
@@ -59,7 +59,7 @@
 
 - (CGSize)dimensions
 {
-    return CGSizeMake(CGRectGetWidth([UIScreen mainScreen].bounds), 64);
+    return CGSizeMake(CGRectGetWidth([UIScreen mainScreen].bounds), 50);
 }
 
 - (NSDictionary *)settings
